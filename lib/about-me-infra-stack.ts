@@ -10,7 +10,7 @@ export class AboutMeInfraStack extends cdk.Stack {
     const s3Bucket = new s3.Bucket(this, 'AboutMeInfraBucket', {
       bucketName: 'about-me-infra',
       publicReadAccess: true,
-      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ACLS,
+
       removalPolicy: cdk.RemovalPolicy.DESTROY,
       autoDeleteObjects: true,
       encryption: s3.BucketEncryption.S3_MANAGED,
