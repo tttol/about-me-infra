@@ -39,11 +39,6 @@ export class AboutMeInfraStack extends cdk.Stack {
       encryption: s3.BucketEncryption.S3_MANAGED,
     });
 
-    // Create ACM certificate in us-east-1 for CloudFront
-    // const certificate = new acm.Certificate(this, 'Certificate', {
-    //   domainName: props.domainName,
-    // });
-
     const certificateArn = process.env.ACM_CERTIFICATE_ARN || '';
     const certificate = acm.Certificate.fromCertificateArn(this, 'Certificate', certificateArn);
 
@@ -79,7 +74,7 @@ export class AboutMeInfraStack extends cdk.Stack {
         new targets.CloudFrontTarget(distribution)
       ),
     });
-    
+
     // Output the CloudFront URL
     new cdk.CfnOutput(this, 'CloudFrontURL', {
       value: `https://${props.domainName}`,

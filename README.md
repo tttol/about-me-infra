@@ -1,14 +1,14 @@
-# Welcome to your CDK TypeScript project
+# about-me-infra
+This is an infrastructure code of [about-me-app](https://github.com/tttol/about-me-app).
 
-This is a blank project for CDK development with TypeScript.
+# Deloy
+Create .env file
+```
+CDK_DEFAULT_ACCOUNT=AWS account ID
+CDK_DEFAULT_REGION=AWS region
+DOMAIN_NAME=domain name
+HOSTED_ZONE_ID=Route 53 host zone ID
+ACM_CERTIFICATE_ARN=arn:aws:acm:us-east-1:[AWS account ID]:certificate/xxx
+```
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+Run `cdk deploy`
