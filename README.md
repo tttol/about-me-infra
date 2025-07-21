@@ -1,7 +1,7 @@
 # about-me-infra
 This is an infrastructure code of [about-me-app](https://github.com/tttol/about-me-app).
 
-# Deloy
+# Deploy
 Create .env file
 ```
 CDK_DEFAULT_ACCOUNT=AWS account ID
