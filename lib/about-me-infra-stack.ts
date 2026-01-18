@@ -75,10 +75,60 @@ export class AboutMeInfraStack extends cdk.Stack {
       ),
     });
 
+    // S3 bucket for blog
+    const blogBucket = new s3.Bucket(this, 'BlogBucket', {
+      bucketName: `blog-about-me-infra-${this.account}`,
+      publicReadAccess: false,
+      blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
+      removalPolicy: cdk.RemovalPolicy.DESTROY,
+      autoDeleteObjects: true,
+      encryption: s3.BucketEncryption.S3_MANAGED,
+    });
+
+    // CloudFront distribution for blog
+    const blogDistribution = new cloudfront.Distribution(this, 'BlogDistribution', {
+      defaultBehavior: {
+        origin: origins.S3BucketOrigin.withOriginAccessControl(blogBucket),
+        viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
+        cachePolicy: cloudfront.CachePolicy.CACHING_OPTIMIZED,
+        compress: true,
+      },
+      domainNames: [`blog.${props.domainName}`],
+      certificate: certificate,
+      defaultRootObject: 'index.html',
+      errorResponses: [
+        {
+          httpStatus: 404,
+          responseHttpStatus: 200,
+          responsePagePath: '/index.html',
+        },
+        {
+          httpStatus: 403,
+          responseHttpStatus: 200,
+          responsePagePath: '/index.html',
+        },
+      ],
+    });
+
+    // A record for blog subdomain
+    new route53.ARecord(this, 'BlogAliasRecord', {
+      zone: hostedZone,
+      recordName: 'blog',
+      target: route53.RecordTarget.fromAlias(
+        new targets.CloudFrontTarget(blogDistribution)
+      ),
+    });
+
+    // Output
+    new cdk.CfnOutput(this, 'BlogURL', {
+      value: `https://blog.${props.domainName}`,
+        description: 'Blog Domain URL',
+    });
+
     // Output the CloudFront URL
     new cdk.CfnOutput(this, 'CloudFrontURL', {
       value: `https://${props.domainName}`,
-      description: 'Custom Domain URL',
+        description: 'Custom Domain URL',
     });
   }
 }
