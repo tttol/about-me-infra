@@ -42,6 +42,25 @@ export class AboutMeInfraStack extends cdk.Stack {
     const certificateArn = process.env.ACM_CERTIFICATE_ARN || '';
     const certificate = acm.Certificate.fromCertificateArn(this, 'Certificate', certificateArn);
 
+    // CloudFront Function for URL rewrite
+    const urlRewriteFunction = new cloudfront.Function(this, 'UrlRewriteFunction', {
+      functionName: `url-rewrite-${this.stackName}`,
+      code: cloudfront.FunctionCode.fromInline(`
+function handler(event) {
+    var request = event.request;
+    var uri = request.uri;
+
+    if (uri.endsWith('/')) {
+        request.uri += 'index.html';
+    } else if (!uri.includes('.')) {
+        request.uri += '/index.html';
+    }
+
+    return request;
+}
+      `),
+    });
+
     // CloudFront distribution with custom domain
     const distribution = new cloudfront.Distribution(this, 'AboutMeDistribution', {
       defaultBehavior: {
@@ -49,6 +68,10 @@ export class AboutMeInfraStack extends cdk.Stack {
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
         cachePolicy: cloudfront.CachePolicy.CACHING_OPTIMIZED,
         compress: true,
+        functionAssociations: [{
+          function: urlRewriteFunction,
+          eventType: cloudfront.FunctionEventType.VIEWER_REQUEST,
+        }],
       },
       domainNames: [props.domainName],
       certificate: certificate,
@@ -92,6 +115,10 @@ export class AboutMeInfraStack extends cdk.Stack {
         viewerProtocolPolicy: cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
         cachePolicy: cloudfront.CachePolicy.CACHING_OPTIMIZED,
         compress: true,
+        functionAssociations: [{
+          function: urlRewriteFunction,
+          eventType: cloudfront.FunctionEventType.VIEWER_REQUEST,
+        }],
       },
       domainNames: [`blog.${props.domainName}`],
       certificate: certificate,
