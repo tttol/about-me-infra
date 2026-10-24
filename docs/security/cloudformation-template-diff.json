@@ -1,0 +1,7 @@
+[
+  {
+    "path": "/Resources/CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F/Properties/Runtime",
+    "before": "nodejs20.x",
+    "after": "nodejs24.x"
+  }
+]

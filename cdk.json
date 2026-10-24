@@ -1,5 +1,5 @@
 {
-  "app": "npx ts-node --prefer-ts-exts bin/about-me-infra.ts",
+  "app": "npm run build --silent && node dist/bin/about-me-infra.js",
   "watch": {
     "include": [
       "**"
@@ -13,7 +13,10 @@
       "package*.json",
       "yarn.lock",
       "node_modules",
-      "test"
+      "test",
+      "dist",
+      "scripts",
+      "docs"
     ]
   },
   "context": {

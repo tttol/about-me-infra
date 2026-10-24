@@ -1,29 +1,28 @@
 {
   "name": "about-me-infra",
   "version": "0.1.0",
-  "bin": {
-    "about-me-infra": "bin/about-me-infra.js"
-  },
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "test": "jest",
-    "cdk": "cdk"
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "cdk": "cdk",
+    "synth:offline": "npm run build && node scripts/synth-offline.mjs",
+    "check": "npm test && npm run synth:offline && npm audit --audit-level=low"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.14",
-    "@types/node": "22.7.9",
-    "aws-cdk": "2.1006.0",
-    "jest": "^29.7.0",
-    "ts-jest": "^29.2.5",
-    "ts-node": "^10.9.2",
-    "typescript": "~5.6.3"
+    "@types/node": "24.19.2",
+    "aws-cdk": "2.1146.1",
+    "typescript": "7.0.2"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.187.0",
-    "cdk": "^2.1101.0",
-    "constructs": "^10.0.0",
-    "dotenv": "^16.4.7",
-    "zod": "^3.24.2"
-  }
+    "aws-cdk-lib": "2.274.0",
+    "constructs": "10.8.1",
+    "dotenv": "18.0.9"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=24.22.1 <25",
+    "npm": ">=12.2.1 <13"
+  },
+  "packageManager": "npm@12.2.1"
 }
