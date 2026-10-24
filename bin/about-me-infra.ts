@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import * as dotenv from 'dotenv';
-dotenv.config();
+dotenv.config({ path: process.env.DOTENV_CONFIG_PATH || '.env', quiet: true });
 
 import * as cdk from 'aws-cdk-lib';
 import { AboutMeInfraStack } from '../lib/about-me-infra-stack';

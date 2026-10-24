@@ -1,0 +1,2240 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@babel/core": {
+      "name": "@babel/core",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@babel/helper-compilation-targets",
+        "@babel/helper-module-transforms",
+        {
+          "source": 1123528,
+          "name": "@babel/core",
+          "dependency": "@babel/core",
+          "title": "@babel/core: Arbitrary File Read via sourceMappingURL Comment",
+          "url": "https://github.com/advisories/GHSA-4x5r-pxfx-6jf8",
+          "severity": "low",
+          "cwe": [
+            "CWE-22",
+            "CWE-200"
+          ],
+          "cvss": {
+            "score": 3.2,
+            "vectorString": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:N/A:N"
+          },
+          "range": "<=7.29.0"
+        }
+      ],
+      "effects": [
+        "@babel/helper-module-transforms",
+        "@babel/plugin-syntax-async-generators",
+        "@babel/plugin-syntax-bigint",
+        "@babel/plugin-syntax-class-properties",
+        "@babel/plugin-syntax-class-static-block",
+        "@babel/plugin-syntax-import-attributes",
+        "@babel/plugin-syntax-import-meta",
+        "@babel/plugin-syntax-json-strings",
+        "@babel/plugin-syntax-jsx",
+        "@babel/plugin-syntax-logical-assignment-operators",
+        "@babel/plugin-syntax-nullish-coalescing-operator",
+        "@babel/plugin-syntax-numeric-separator",
+        "@babel/plugin-syntax-object-rest-spread",
+        "@babel/plugin-syntax-optional-catch-binding",
+        "@babel/plugin-syntax-optional-chaining",
+        "@babel/plugin-syntax-private-property-in-object",
+        "@babel/plugin-syntax-top-level-await",
+        "@babel/plugin-syntax-typescript",
+        "@jest/transform",
+        "babel-jest",
+        "babel-preset-current-node-syntax",
+        "babel-preset-jest",
+        "istanbul-lib-instrument",
+        "jest-config",
+        "jest-snapshot",
+        "ts-jest"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/core"
+      ],
+      "fixAvailable": false
+    },
+    "@babel/helper-compilation-targets": {
+      "name": "@babel/helper-compilation-targets",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "browserslist"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/helper-compilation-targets"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/helper-module-transforms": {
+      "name": "@babel/helper-module-transforms",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [
+        "@babel/core"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/helper-module-transforms"
+      ],
+      "fixAvailable": false
+    },
+    "@babel/plugin-syntax-async-generators": {
+      "name": "@babel/plugin-syntax-async-generators",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-async-generators"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/plugin-syntax-bigint": {
+      "name": "@babel/plugin-syntax-bigint",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-bigint"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/plugin-syntax-class-properties": {
+      "name": "@babel/plugin-syntax-class-properties",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-class-properties"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/plugin-syntax-class-static-block": {
+      "name": "@babel/plugin-syntax-class-static-block",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-class-static-block"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/plugin-syntax-import-attributes": {
+      "name": "@babel/plugin-syntax-import-attributes",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-import-attributes"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/plugin-syntax-import-meta": {
+      "name": "@babel/plugin-syntax-import-meta",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-import-meta"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/plugin-syntax-json-strings": {
+      "name": "@babel/plugin-syntax-json-strings",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-json-strings"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/plugin-syntax-jsx": {
+      "name": "@babel/plugin-syntax-jsx",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-jsx"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/plugin-syntax-logical-assignment-operators": {
+      "name": "@babel/plugin-syntax-logical-assignment-operators",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-logical-assignment-operators"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/plugin-syntax-nullish-coalescing-operator": {
+      "name": "@babel/plugin-syntax-nullish-coalescing-operator",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-nullish-coalescing-operator"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/plugin-syntax-numeric-separator": {
+      "name": "@babel/plugin-syntax-numeric-separator",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-numeric-separator"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/plugin-syntax-object-rest-spread": {
+      "name": "@babel/plugin-syntax-object-rest-spread",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-object-rest-spread"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/plugin-syntax-optional-catch-binding": {
+      "name": "@babel/plugin-syntax-optional-catch-binding",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-optional-catch-binding"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/plugin-syntax-optional-chaining": {
+      "name": "@babel/plugin-syntax-optional-chaining",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-optional-chaining"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/plugin-syntax-private-property-in-object": {
+      "name": "@babel/plugin-syntax-private-property-in-object",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-private-property-in-object"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/plugin-syntax-top-level-await": {
+      "name": "@babel/plugin-syntax-top-level-await",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-top-level-await"
+      ],
+      "fixAvailable": true
+    },
+    "@babel/plugin-syntax-typescript": {
+      "name": "@babel/plugin-syntax-typescript",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@babel/plugin-syntax-typescript"
+      ],
+      "fixAvailable": true
+    },
+    "@istanbuljs/load-nyc-config": {
+      "name": "@istanbuljs/load-nyc-config",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "js-yaml"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@istanbuljs/load-nyc-config"
+      ],
+      "fixAvailable": true
+    },
+    "@jest/console": {
+      "name": "@jest/console",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "jest-message-util",
+        "jest-util"
+      ],
+      "effects": [
+        "@jest/test-result"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/@jest/console"
+      ],
+      "fixAvailable": true
+    },
+    "@jest/core": {
+      "name": "@jest/core",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@jest/console",
+        "@jest/reporters",
+        "@jest/test-result",
+        "@jest/transform",
+        "jest-changed-files",
+        "jest-config",
+        "jest-haste-map",
+        "jest-message-util",
+        "jest-resolve",
+        "jest-resolve-dependencies",
+        "jest-runner",
+        "jest-runtime",
+        "jest-snapshot",
+        "jest-util",
+        "jest-watcher",
+        "micromatch"
+      ],
+      "effects": [
+        "jest"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/@jest/core"
+      ],
+      "fixAvailable": false
+    },
+    "@jest/environment": {
+      "name": "@jest/environment",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@jest/fake-timers",
+        "jest-mock"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@jest/environment"
+      ],
+      "fixAvailable": true
+    },
+    "@jest/expect": {
+      "name": "@jest/expect",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "expect",
+        "jest-snapshot"
+      ],
+      "effects": [
+        "@jest/globals"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/@jest/expect"
+      ],
+      "fixAvailable": true
+    },
+    "@jest/fake-timers": {
+      "name": "@jest/fake-timers",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "jest-message-util",
+        "jest-mock",
+        "jest-util"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@jest/fake-timers"
+      ],
+      "fixAvailable": true
+    },
+    "@jest/globals": {
+      "name": "@jest/globals",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@jest/environment",
+        "@jest/expect",
+        "jest-mock"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@jest/globals"
+      ],
+      "fixAvailable": true
+    },
+    "@jest/reporters": {
+      "name": "@jest/reporters",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@jest/console",
+        "@jest/test-result",
+        "@jest/transform",
+        "glob",
+        "istanbul-lib-instrument",
+        "jest-message-util",
+        "jest-util",
+        "jest-worker"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@jest/reporters"
+      ],
+      "fixAvailable": true
+    },
+    "@jest/test-result": {
+      "name": "@jest/test-result",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@jest/console"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@jest/test-result"
+      ],
+      "fixAvailable": true
+    },
+    "@jest/test-sequencer": {
+      "name": "@jest/test-sequencer",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@jest/test-result",
+        "jest-haste-map"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@jest/test-sequencer"
+      ],
+      "fixAvailable": true
+    },
+    "@jest/transform": {
+      "name": "@jest/transform",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@babel/core",
+        "babel-plugin-istanbul",
+        "jest-haste-map",
+        "jest-util",
+        "micromatch"
+      ],
+      "effects": [
+        "@jest/core",
+        "@jest/reporters",
+        "jest-runner",
+        "jest-runtime"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/@jest/transform"
+      ],
+      "fixAvailable": false
+    },
+    "@types/jest": {
+      "name": "@types/jest",
+      "severity": "moderate",
+      "isDirect": true,
+      "via": [
+        "expect"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/@types/jest"
+      ],
+      "fixAvailable": false
+    },
+    "ajv": {
+      "name": "ajv",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1113715,
+          "name": "ajv",
+          "dependency": "ajv",
+          "title": "ajv has ReDoS when using `$data` option",
+          "url": "https://github.com/advisories/GHSA-2g4f-4pwh-qvx6",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-400",
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=7.0.0-alpha.0 <8.18.0"
+        },
+        "fast-uri"
+      ],
+      "effects": [
+        "table"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/aws-cdk-lib/node_modules/ajv"
+      ],
+      "fixAvailable": true
+    },
+    "anymatch": {
+      "name": "anymatch",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "picomatch"
+      ],
+      "effects": [
+        "jest-haste-map"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/anymatch"
+      ],
+      "fixAvailable": true
+    },
+    "aws-cdk-lib": {
+      "name": "aws-cdk-lib",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1103875,
+          "name": "aws-cdk-lib",
+          "dependency": "aws-cdk-lib",
+          "title": "AWS CDK CodePipeline: trusted entities are too broad",
+          "url": "https://github.com/advisories/GHSA-5pq3-h73f-66hr",
+          "severity": "low",
+          "cwe": [
+            "CWE-276"
+          ],
+          "cvss": {
+            "score": 3.8,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N"
+          },
+          "range": "<2.189.0"
+        },
+        {
+          "source": 1103896,
+          "name": "aws-cdk-lib",
+          "dependency": "aws-cdk-lib",
+          "title": "aws-cdk-lib's aspect order change causes different Permissions Boundary assigned to Role",
+          "url": "https://github.com/advisories/GHSA-qc59-cxj2-c2w4",
+          "severity": "low",
+          "cwe": [
+            "CWE-279"
+          ],
+          "cvss": {
+            "score": 2.2,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": ">=2.172.0 <2.189.1"
+        },
+        {
+          "source": 1120819,
+          "name": "aws-cdk-lib",
+          "dependency": "aws-cdk-lib",
+          "title": "aws-cdk-lib: OS Command Injection in NodejsFunction Bundling",
+          "url": "https://github.com/advisories/GHSA-999r-qq7v-r334",
+          "severity": "high",
+          "cwe": [
+            "CWE-78"
+          ],
+          "cvss": {
+            "score": 7.3,
+            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+          },
+          "range": "<2.246.0"
+        },
+        {
+          "source": 1124013,
+          "name": "aws-cdk-lib",
+          "dependency": "aws-cdk-lib",
+          "title": "aws-cdk-lib: OS Command Injection in NodejsFunction Docker Bundling",
+          "url": "https://github.com/advisories/GHSA-vcrf-j523-4mrf",
+          "severity": "high",
+          "cwe": [
+            "CWE-78"
+          ],
+          "cvss": {
+            "score": 7.3,
+            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+          },
+          "range": "<2.260.0"
+        },
+        {
+          "source": 1124284,
+          "name": "aws-cdk-lib",
+          "dependency": "aws-cdk-lib",
+          "title": "AWS CDK CodeBuild S3 Log Encryption Boolean Inversion",
+          "url": "https://github.com/advisories/GHSA-464c-974j-9xm6",
+          "severity": "low",
+          "cwe": [
+            "CWE-311",
+            "CWE-682"
+          ],
+          "cvss": {
+            "score": 3.3,
+            "vectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N"
+          },
+          "range": "<2.253.0"
+        },
+        "minimatch",
+        "table",
+        "yaml"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/aws-cdk-lib"
+      ],
+      "fixAvailable": false
+    },
+    "babel-jest": {
+      "name": "babel-jest",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core",
+        "@jest/transform",
+        "babel-plugin-istanbul",
+        "babel-preset-jest"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/babel-jest"
+      ],
+      "fixAvailable": true
+    },
+    "babel-plugin-istanbul": {
+      "name": "babel-plugin-istanbul",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@istanbuljs/load-nyc-config",
+        "istanbul-lib-instrument",
+        "test-exclude"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/babel-plugin-istanbul"
+      ],
+      "fixAvailable": true
+    },
+    "babel-preset-current-node-syntax": {
+      "name": "babel-preset-current-node-syntax",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core",
+        "@babel/plugin-syntax-async-generators",
+        "@babel/plugin-syntax-bigint",
+        "@babel/plugin-syntax-class-properties",
+        "@babel/plugin-syntax-class-static-block",
+        "@babel/plugin-syntax-import-attributes",
+        "@babel/plugin-syntax-import-meta",
+        "@babel/plugin-syntax-json-strings",
+        "@babel/plugin-syntax-logical-assignment-operators",
+        "@babel/plugin-syntax-nullish-coalescing-operator",
+        "@babel/plugin-syntax-numeric-separator",
+        "@babel/plugin-syntax-object-rest-spread",
+        "@babel/plugin-syntax-optional-catch-binding",
+        "@babel/plugin-syntax-optional-chaining",
+        "@babel/plugin-syntax-private-property-in-object",
+        "@babel/plugin-syntax-top-level-await"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/babel-preset-current-node-syntax"
+      ],
+      "fixAvailable": true
+    },
+    "babel-preset-jest": {
+      "name": "babel-preset-jest",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core",
+        "babel-preset-current-node-syntax"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/babel-preset-jest"
+      ],
+      "fixAvailable": true
+    },
+    "brace-expansion": {
+      "name": "brace-expansion",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1105443,
+          "name": "brace-expansion",
+          "dependency": "brace-expansion",
+          "title": "brace-expansion Regular Expression Denial of Service vulnerability",
+          "url": "https://github.com/advisories/GHSA-v6h2-p8h4-qcjw",
+          "severity": "low",
+          "cwe": [
+            "CWE-400"
+          ],
+          "cvss": {
+            "score": 3.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": ">=1.0.0 <=1.1.11"
+        },
+        {
+          "source": 1105444,
+          "name": "brace-expansion",
+          "dependency": "brace-expansion",
+          "title": "brace-expansion Regular Expression Denial of Service vulnerability",
+          "url": "https://github.com/advisories/GHSA-v6h2-p8h4-qcjw",
+          "severity": "low",
+          "cwe": [
+            "CWE-400"
+          ],
+          "cvss": {
+            "score": 3.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": ">=2.0.0 <=2.0.1"
+        },
+        {
+          "source": 1115540,
+          "name": "brace-expansion",
+          "dependency": "brace-expansion",
+          "title": "brace-expansion: Zero-step sequence causes process hang and memory exhaustion",
+          "url": "https://github.com/advisories/GHSA-f886-m6hf-6m8v",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-400"
+          ],
+          "cvss": {
+            "score": 6.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          },
+          "range": "<1.1.13"
+        },
+        {
+          "source": 1115541,
+          "name": "brace-expansion",
+          "dependency": "brace-expansion",
+          "title": "brace-expansion: Zero-step sequence causes process hang and memory exhaustion",
+          "url": "https://github.com/advisories/GHSA-f886-m6hf-6m8v",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-400"
+          ],
+          "cvss": {
+            "score": 6.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=2.0.0 <2.0.3"
+        },
+        {
+          "source": 1123896,
+          "name": "brace-expansion",
+          "dependency": "brace-expansion",
+          "title": "brace-expansion: DoS via exponential-time expansion of consecutive non-expanding {} groups",
+          "url": "https://github.com/advisories/GHSA-3jxr-9vmj-r5cp",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-407"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": ">=2.0.0 <2.1.2"
+        },
+        {
+          "source": 1123897,
+          "name": "brace-expansion",
+          "dependency": "brace-expansion",
+          "title": "brace-expansion: DoS via exponential-time expansion of consecutive non-expanding {} groups",
+          "url": "https://github.com/advisories/GHSA-3jxr-9vmj-r5cp",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-407"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<1.1.16"
+        },
+        {
+          "source": 1130588,
+          "name": "brace-expansion",
+          "dependency": "brace-expansion",
+          "title": "brace-expansion: DoS via unbounded expansion length causing an out-of-memory process crash",
+          "url": "https://github.com/advisories/GHSA-mh99-v99m-4gvg",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-770"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<1.1.17"
+        },
+        {
+          "source": 1130589,
+          "name": "brace-expansion",
+          "dependency": "brace-expansion",
+          "title": "brace-expansion: DoS via unbounded expansion length causing an out-of-memory process crash",
+          "url": "https://github.com/advisories/GHSA-mh99-v99m-4gvg",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-770"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=2.0.0 <2.1.3"
+        },
+        {
+          "source": 1130736,
+          "name": "brace-expansion",
+          "dependency": "brace-expansion",
+          "title": "brace-expansion: DoS via unbounded intermediate arrays, bypassing the CVE-2026-14257 mitigation",
+          "url": "https://github.com/advisories/GHSA-rgw5-rvv9-x895",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-770"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=2.0.0 <2.1.4"
+        },
+        {
+          "source": 1130737,
+          "name": "brace-expansion",
+          "dependency": "brace-expansion",
+          "title": "brace-expansion: DoS via unbounded intermediate arrays, bypassing the CVE-2026-14257 mitigation",
+          "url": "https://github.com/advisories/GHSA-rgw5-rvv9-x895",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-770"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<1.1.18"
+        },
+        {
+          "source": 1240100,
+          "name": "brace-expansion",
+          "dependency": "brace-expansion",
+          "title": "brace-expansion: Quadratic-time expansion of the `{a},b}` rewrite causes CPU denial of service",
+          "url": "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-400",
+            "CWE-407"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<1.1.21"
+        },
+        {
+          "source": 1240101,
+          "name": "brace-expansion",
+          "dependency": "brace-expansion",
+          "title": "brace-expansion: Quadratic-time expansion of the `{a},b}` rewrite causes CPU denial of service",
+          "url": "https://github.com/advisories/GHSA-q2hr-2g5m-vwhr",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-400",
+            "CWE-407"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": ">=2.0.0 <2.1.7"
+        },
+        {
+          "source": 1240104,
+          "name": "brace-expansion",
+          "dependency": "brace-expansion",
+          "title": "brace-expansion: DoS via uncontrolled recursion on nested brace groups causing stack exhaustion",
+          "url": "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-674"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<1.1.20"
+        },
+        {
+          "source": 1240105,
+          "name": "brace-expansion",
+          "dependency": "brace-expansion",
+          "title": "brace-expansion: DoS via uncontrolled recursion on nested brace groups causing stack exhaustion",
+          "url": "https://github.com/advisories/GHSA-qhr7-859c-m2p7",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-674"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=2.0.0 <2.1.6"
+        },
+        {
+          "source": 1240108,
+          "name": "brace-expansion",
+          "dependency": "brace-expansion",
+          "title": "brace-expansion: DoS via uncontrolled recursion in parseCommaParts causing stack exhaustion",
+          "url": "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-674"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<1.1.19"
+        },
+        {
+          "source": 1240109,
+          "name": "brace-expansion",
+          "dependency": "brace-expansion",
+          "title": "brace-expansion: DoS via uncontrolled recursion in parseCommaParts causing stack exhaustion",
+          "url": "https://github.com/advisories/GHSA-6j4f-fj2g-mc7p",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-674"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=2.0.0 <2.1.5"
+        }
+      ],
+      "effects": [
+        "minimatch"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/aws-cdk-lib/node_modules/brace-expansion",
+        "node_modules/brace-expansion",
+        "node_modules/filelist/node_modules/brace-expansion"
+      ],
+      "fixAvailable": false
+    },
+    "browserslist": {
+      "name": "browserslist",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1153171,
+          "name": "browserslist",
+          "dependency": "browserslist",
+          "title": "Browserslist: Unbounded memory growth (no cache eviction) via distinct query results, leading to eventual OOM",
+          "url": "https://github.com/advisories/GHSA-c83g-rgw3-j3cx",
+          "severity": "high",
+          "cwe": [
+            "CWE-770"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<=4.28.6"
+        },
+        {
+          "source": 1153172,
+          "name": "browserslist",
+          "dependency": "browserslist",
+          "title": "Browserslist: Uncaught crash / prototype write via untrusted browserslist-stats.json custom stats (normalizeStats)",
+          "url": "https://github.com/advisories/GHSA-73wf-gq98-2v4g",
+          "severity": "high",
+          "cwe": [
+            "CWE-248",
+            "CWE-1321"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<=4.28.6"
+        },
+        "update-browserslist-db"
+      ],
+      "effects": [
+        "@babel/helper-compilation-targets",
+        "update-browserslist-db"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/browserslist"
+      ],
+      "fixAvailable": true
+    },
+    "create-jest": {
+      "name": "create-jest",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "jest-config",
+        "jest-util"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/create-jest"
+      ],
+      "fixAvailable": true
+    },
+    "diff": {
+      "name": "diff",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1112704,
+          "name": "diff",
+          "dependency": "diff",
+          "title": "jsdiff has a Denial of Service vulnerability in parsePatch and applyPatch",
+          "url": "https://github.com/advisories/GHSA-73rr-hh4g-fpgx",
+          "severity": "low",
+          "cwe": [
+            "CWE-400",
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=4.0.0 <4.0.4"
+        }
+      ],
+      "effects": [
+        "ts-node"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/diff"
+      ],
+      "fixAvailable": false
+    },
+    "ejs": {
+      "name": "ejs",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "jake"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/ejs"
+      ],
+      "fixAvailable": true
+    },
+    "expect": {
+      "name": "expect",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "jest-message-util",
+        "jest-util"
+      ],
+      "effects": [
+        "@types/jest"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/expect"
+      ],
+      "fixAvailable": false
+    },
+    "fast-uri": {
+      "name": "fast-uri",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1124064,
+          "name": "fast-uri",
+          "dependency": "fast-uri",
+          "title": "fast-uri vulnerable to host confusion via literal backslash authority delimiter",
+          "url": "https://github.com/advisories/GHSA-v2hh-gcrm-f6hx",
+          "severity": "high",
+          "cwe": [
+            "CWE-436"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+          },
+          "range": ">=3.0.0 <=3.1.3"
+        },
+        {
+          "source": 1130720,
+          "name": "fast-uri",
+          "dependency": "fast-uri",
+          "title": "fast-uri vulnerable to host confusion via backslash authority introducer",
+          "url": "https://github.com/advisories/GHSA-7p8r-x3mc-p8w7",
+          "severity": "high",
+          "cwe": [
+            "CWE-436"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+          },
+          "range": ">=3.0.0 <3.1.5"
+        },
+        {
+          "source": 1145559,
+          "name": "fast-uri",
+          "dependency": "fast-uri",
+          "title": "fast-uri vulnerable to path traversal via percent-encoded dot segments",
+          "url": "https://github.com/advisories/GHSA-q3j6-qgpj-74h6",
+          "severity": "high",
+          "cwe": [
+            "CWE-22"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+          },
+          "range": ">=3.0.0 <=3.1.0"
+        },
+        {
+          "source": 1153168,
+          "name": "fast-uri",
+          "dependency": "fast-uri",
+          "title": "fast-uri vulnerable to host confusion via percent-encoded authority delimiters",
+          "url": "https://github.com/advisories/GHSA-v39h-62p7-jpjc",
+          "severity": "high",
+          "cwe": [
+            "CWE-140",
+            "CWE-436"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+          },
+          "range": ">=3.0.0 <=3.1.1"
+        },
+        {
+          "source": 1158524,
+          "name": "fast-uri",
+          "dependency": "fast-uri",
+          "title": "fast-uri vulnerable to server-side request forgery via malformed IPv6 normalization",
+          "url": "https://github.com/advisories/GHSA-f65p-4m7j-42xc",
+          "severity": "high",
+          "cwe": [
+            "CWE-20",
+            "CWE-918"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+          },
+          "range": ">=3.0.0 <3.1.6"
+        },
+        {
+          "source": 1158530,
+          "name": "fast-uri",
+          "dependency": "fast-uri",
+          "title": "fast-uri vulnerable to host confusion via percent-encoded scheme normalization",
+          "url": "https://github.com/advisories/GHSA-jqff-g426-hqxp",
+          "severity": "high",
+          "cwe": [
+            "CWE-177"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+          },
+          "range": ">=3.0.0 <3.1.6"
+        },
+        {
+          "source": 1204921,
+          "name": "fast-uri",
+          "dependency": "fast-uri",
+          "title": "fast-uri vulnerable to host confusion via failed IDN canonicalization",
+          "url": "https://github.com/advisories/GHSA-4c8g-83qw-93j6",
+          "severity": "high",
+          "cwe": [
+            "CWE-436",
+            "CWE-551"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+          },
+          "range": ">=3.0.0 <3.1.3"
+        },
+        {
+          "source": 1239943,
+          "name": "fast-uri",
+          "dependency": "fast-uri",
+          "title": "fast-uri vulnerable to authority injection via an unvalidated port in serialize",
+          "url": "https://github.com/advisories/GHSA-qw65-cvwx-89v3",
+          "severity": "high",
+          "cwe": [
+            "CWE-116"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+          },
+          "range": ">=3.0.0 <3.1.7"
+        },
+        {
+          "source": 1240091,
+          "name": "fast-uri",
+          "dependency": "fast-uri",
+          "title": "fast-uri vulnerable to inconsistent host case normalization via percent-encoded octets",
+          "url": "https://github.com/advisories/GHSA-hrr3-gc8f-f4qj",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-178"
+          ],
+          "cvss": {
+            "score": 4.8,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N"
+          },
+          "range": ">=3.0.0 <3.1.8"
+        },
+        {
+          "source": 1243098,
+          "name": "fast-uri",
+          "dependency": "fast-uri",
+          "title": "fast-uri vulnerable to URI scheme spoofing via percent-encoded scheme decoding",
+          "url": "https://github.com/advisories/GHSA-w74x-v6f9-j3xg",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-172",
+            "CWE-180"
+          ],
+          "cvss": {
+            "score": 6.1,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+          },
+          "range": ">=3.0.0 <3.1.9"
+        },
+        {
+          "source": 1243101,
+          "name": "fast-uri",
+          "dependency": "fast-uri",
+          "title": "fast-uri vulnerable to improper path equivalence in relative reference normalization",
+          "url": "https://github.com/advisories/GHSA-xhq7-xmqj-769h",
+          "severity": "low",
+          "cwe": [
+            "CWE-41"
+          ],
+          "cvss": {
+            "score": 3.7,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+          },
+          "range": ">=3.0.0 <3.1.9"
+        },
+        {
+          "source": 1243107,
+          "name": "fast-uri",
+          "dependency": "fast-uri",
+          "title": "fast-uri vulnerable to scheme injection via an unescaped first-segment colon in suffix references",
+          "url": "https://github.com/advisories/GHSA-333x-w4r6-6crp",
+          "severity": "low",
+          "cwe": [
+            "CWE-41",
+            "CWE-116"
+          ],
+          "cvss": {
+            "score": 3.7,
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N"
+          },
+          "range": ">=3.0.0 <3.1.9"
+        }
+      ],
+      "effects": [
+        "ajv"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/aws-cdk-lib/node_modules/fast-uri"
+      ],
+      "fixAvailable": true
+    },
+    "filelist": {
+      "name": "filelist",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "minimatch"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/filelist"
+      ],
+      "fixAvailable": true
+    },
+    "glob": {
+      "name": "glob",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "minimatch"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/glob"
+      ],
+      "fixAvailable": true
+    },
+    "istanbul-lib-instrument": {
+      "name": "istanbul-lib-instrument",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "@babel/core"
+      ],
+      "effects": [
+        "babel-plugin-istanbul"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/babel-plugin-istanbul/node_modules/istanbul-lib-instrument",
+        "node_modules/istanbul-lib-instrument"
+      ],
+      "fixAvailable": true
+    },
+    "jake": {
+      "name": "jake",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "filelist",
+        "minimatch"
+      ],
+      "effects": [
+        "ejs"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/jake"
+      ],
+      "fixAvailable": true
+    },
+    "jest": {
+      "name": "jest",
+      "severity": "low",
+      "isDirect": true,
+      "via": [
+        "@jest/core",
+        "jest-cli"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/jest"
+      ],
+      "fixAvailable": false
+    },
+    "jest-changed-files": {
+      "name": "jest-changed-files",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "jest-util"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-changed-files"
+      ],
+      "fixAvailable": true
+    },
+    "jest-circus": {
+      "name": "jest-circus",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@jest/environment",
+        "@jest/expect",
+        "@jest/test-result",
+        "jest-each",
+        "jest-message-util",
+        "jest-runtime",
+        "jest-snapshot",
+        "jest-util"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-circus"
+      ],
+      "fixAvailable": true
+    },
+    "jest-cli": {
+      "name": "jest-cli",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@jest/core",
+        "@jest/test-result",
+        "create-jest",
+        "jest-config",
+        "jest-util"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-cli"
+      ],
+      "fixAvailable": true
+    },
+    "jest-config": {
+      "name": "jest-config",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@babel/core",
+        "@jest/test-sequencer",
+        "babel-jest",
+        "glob",
+        "jest-circus",
+        "jest-environment-node",
+        "jest-resolve",
+        "jest-runner",
+        "jest-util",
+        "micromatch",
+        "ts-node"
+      ],
+      "effects": [
+        "create-jest",
+        "jest-cli"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-config"
+      ],
+      "fixAvailable": true
+    },
+    "jest-each": {
+      "name": "jest-each",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "jest-util"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-each"
+      ],
+      "fixAvailable": true
+    },
+    "jest-environment-node": {
+      "name": "jest-environment-node",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@jest/environment",
+        "@jest/fake-timers",
+        "jest-mock",
+        "jest-util"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-environment-node"
+      ],
+      "fixAvailable": true
+    },
+    "jest-haste-map": {
+      "name": "jest-haste-map",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "anymatch",
+        "jest-util",
+        "jest-worker",
+        "micromatch"
+      ],
+      "effects": [
+        "@jest/test-sequencer"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-haste-map"
+      ],
+      "fixAvailable": true
+    },
+    "jest-message-util": {
+      "name": "jest-message-util",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "micromatch"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-message-util"
+      ],
+      "fixAvailable": true
+    },
+    "jest-mock": {
+      "name": "jest-mock",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "jest-util"
+      ],
+      "effects": [
+        "@jest/environment"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-mock"
+      ],
+      "fixAvailable": true
+    },
+    "jest-pnp-resolver": {
+      "name": "jest-pnp-resolver",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "jest-resolve"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-pnp-resolver"
+      ],
+      "fixAvailable": true
+    },
+    "jest-resolve": {
+      "name": "jest-resolve",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "jest-haste-map",
+        "jest-pnp-resolver",
+        "jest-util"
+      ],
+      "effects": [
+        "jest-pnp-resolver"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-resolve"
+      ],
+      "fixAvailable": true
+    },
+    "jest-resolve-dependencies": {
+      "name": "jest-resolve-dependencies",
+      "severity": "low",
+      "isDirect": false,
+      "via": [
+        "jest-snapshot"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-resolve-dependencies"
+      ],
+      "fixAvailable": true
+    },
+    "jest-runner": {
+      "name": "jest-runner",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@jest/console",
+        "@jest/environment",
+        "@jest/test-result",
+        "@jest/transform",
+        "jest-environment-node",
+        "jest-haste-map",
+        "jest-message-util",
+        "jest-resolve",
+        "jest-runtime",
+        "jest-util",
+        "jest-watcher",
+        "jest-worker"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-runner"
+      ],
+      "fixAvailable": true
+    },
+    "jest-runtime": {
+      "name": "jest-runtime",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "@jest/environment",
+        "@jest/fake-timers",
+        "@jest/globals",
+        "@jest/test-result",
+        "@jest/transform",
+        "glob",
+        "jest-haste-map",
+        "jest-message-util",
+        "jest-mock",
+        "jest-resolve",
+        "jest-snapshot",
+        "jest-util"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-runtime"
+      ],
+      "fixAvailable": true
+    },
+    "jest-snapshot": {
+      "name": "jest-snapshot",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@babel/core",
+        "@babel/plugin-syntax-jsx",
+        "@babel/plugin-syntax-typescript",
+        "@jest/transform",
+        "babel-preset-current-node-syntax",
+        "expect",
+        "jest-message-util",
+        "jest-util"
+      ],
+      "effects": [
+        "@jest/expect",
+        "jest-circus",
+        "jest-resolve-dependencies"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-snapshot"
+      ],
+      "fixAvailable": true
+    },
+    "jest-util": {
+      "name": "jest-util",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "picomatch"
+      ],
+      "effects": [
+        "@jest/console",
+        "@jest/fake-timers",
+        "expect",
+        "jest-changed-files",
+        "jest-each",
+        "jest-environment-node",
+        "jest-mock",
+        "jest-resolve",
+        "jest-watcher",
+        "jest-worker"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-util"
+      ],
+      "fixAvailable": false
+    },
+    "jest-watcher": {
+      "name": "jest-watcher",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "@jest/test-result",
+        "jest-util"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-watcher"
+      ],
+      "fixAvailable": true
+    },
+    "jest-worker": {
+      "name": "jest-worker",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "jest-util"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/jest-worker"
+      ],
+      "fixAvailable": true
+    },
+    "js-yaml": {
+      "name": "js-yaml",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1112714,
+          "name": "js-yaml",
+          "dependency": "js-yaml",
+          "title": "js-yaml has prototype pollution in merge (<<)",
+          "url": "https://github.com/advisories/GHSA-mh29-5h37-fv8m",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-1321"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+          },
+          "range": "<3.14.2"
+        },
+        {
+          "source": 1121859,
+          "name": "js-yaml",
+          "dependency": "js-yaml",
+          "title": "JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+          "url": "https://github.com/advisories/GHSA-h67p-54hq-rp68",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-407"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": "<3.15.0"
+        },
+        {
+          "source": 1123912,
+          "name": "js-yaml",
+          "dependency": "js-yaml",
+          "title": "js-yaml: YAML merge-key chains can force quadratic CPU consumption",
+          "url": "https://github.com/advisories/GHSA-52cp-r559-cp3m",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-407"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=3.0.0 <3.15.0"
+        },
+        {
+          "source": 1138114,
+          "name": "js-yaml",
+          "dependency": "js-yaml",
+          "title": "JS-YAML: Quadratic CPU consumption in !!omap resolution (3.x and 4.x) — CVE-2026-59870 fix not backported",
+          "url": "https://github.com/advisories/GHSA-5p4m-2wfm-xmqj",
+          "severity": "high",
+          "cwe": [
+            "CWE-407"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=3.0.0 <3.15.1"
+        },
+        {
+          "source": 1193726,
+          "name": "js-yaml",
+          "dependency": "js-yaml",
+          "title": "js-yaml: maxTotalMergeKeys does not limit CPU use for empty merge sources",
+          "url": "https://github.com/advisories/GHSA-2883-xcg3-v3hh",
+          "severity": "high",
+          "cwe": [
+            "CWE-400",
+            "CWE-407"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=3.0.0 <3.15.2"
+        }
+      ],
+      "effects": [
+        "@istanbuljs/load-nyc-config"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/js-yaml"
+      ],
+      "fixAvailable": true
+    },
+    "micromatch": {
+      "name": "micromatch",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "picomatch"
+      ],
+      "effects": [
+        "jest-message-util"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/micromatch"
+      ],
+      "fixAvailable": true
+    },
+    "minimatch": {
+      "name": "minimatch",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1113459,
+          "name": "minimatch",
+          "dependency": "minimatch",
+          "title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+          "url": "https://github.com/advisories/GHSA-3ppc-4f35-3m26",
+          "severity": "high",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<3.1.3"
+        },
+        {
+          "source": 1113461,
+          "name": "minimatch",
+          "dependency": "minimatch",
+          "title": "minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern",
+          "url": "https://github.com/advisories/GHSA-3ppc-4f35-3m26",
+          "severity": "high",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": ">=5.0.0 <5.1.7"
+        },
+        {
+          "source": 1113538,
+          "name": "minimatch",
+          "dependency": "minimatch",
+          "title": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+          "url": "https://github.com/advisories/GHSA-7r86-cg39-jmmj",
+          "severity": "high",
+          "cwe": [
+            "CWE-407"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<3.1.3"
+        },
+        {
+          "source": 1113540,
+          "name": "minimatch",
+          "dependency": "minimatch",
+          "title": "minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments",
+          "url": "https://github.com/advisories/GHSA-7r86-cg39-jmmj",
+          "severity": "high",
+          "cwe": [
+            "CWE-407"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=5.0.0 <5.1.8"
+        },
+        {
+          "source": 1113546,
+          "name": "minimatch",
+          "dependency": "minimatch",
+          "title": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+          "url": "https://github.com/advisories/GHSA-23c5-xmqv-rm74",
+          "severity": "high",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<3.1.4"
+        },
+        {
+          "source": 1113548,
+          "name": "minimatch",
+          "dependency": "minimatch",
+          "title": "minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions",
+          "url": "https://github.com/advisories/GHSA-23c5-xmqv-rm74",
+          "severity": "high",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": ">=5.0.0 <5.1.8"
+        },
+        "brace-expansion",
+        "brace-expansion"
+      ],
+      "effects": [
+        "aws-cdk-lib",
+        "filelist",
+        "glob",
+        "jake",
+        "test-exclude"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/aws-cdk-lib/node_modules/minimatch",
+        "node_modules/filelist/node_modules/minimatch",
+        "node_modules/minimatch"
+      ],
+      "fixAvailable": false
+    },
+    "picomatch": {
+      "name": "picomatch",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1115549,
+          "name": "picomatch",
+          "dependency": "picomatch",
+          "title": "Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching",
+          "url": "https://github.com/advisories/GHSA-3v7f-55p6-f55p",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-1321"
+          ],
+          "cvss": {
+            "score": 5.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
+          },
+          "range": "<2.3.2"
+        },
+        {
+          "source": 1115552,
+          "name": "picomatch",
+          "dependency": "picomatch",
+          "title": "Picomatch has a ReDoS vulnerability via extglob quantifiers",
+          "url": "https://github.com/advisories/GHSA-c2c7-rcm5-vvqj",
+          "severity": "high",
+          "cwe": [
+            "CWE-1333"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<2.3.2"
+        }
+      ],
+      "effects": [
+        "anymatch",
+        "jest-util",
+        "micromatch"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/picomatch"
+      ],
+      "fixAvailable": false
+    },
+    "table": {
+      "name": "table",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        "ajv"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/aws-cdk-lib/node_modules/table"
+      ],
+      "fixAvailable": true
+    },
+    "test-exclude": {
+      "name": "test-exclude",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "glob",
+        "minimatch"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/test-exclude"
+      ],
+      "fixAvailable": true
+    },
+    "ts-jest": {
+      "name": "ts-jest",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@babel/core",
+        "@jest/transform",
+        "babel-jest",
+        "ejs",
+        "jest",
+        "jest-util"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/ts-jest"
+      ],
+      "fixAvailable": false
+    },
+    "ts-node": {
+      "name": "ts-node",
+      "severity": "low",
+      "isDirect": true,
+      "via": [
+        "diff"
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/ts-node"
+      ],
+      "fixAvailable": false
+    },
+    "update-browserslist-db": {
+      "name": "update-browserslist-db",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "browserslist"
+      ],
+      "effects": [
+        "browserslist"
+      ],
+      "range": "",
+      "nodes": [
+        "node_modules/update-browserslist-db"
+      ],
+      "fixAvailable": true
+    },
+    "yaml": {
+      "name": "yaml",
+      "severity": "moderate",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1115555,
+          "name": "yaml",
+          "dependency": "yaml",
+          "title": "yaml is vulnerable to Stack Overflow via deeply nested YAML collections",
+          "url": "https://github.com/advisories/GHSA-48c2-rrv3-qjmp",
+          "severity": "moderate",
+          "cwe": [
+            "CWE-674"
+          ],
+          "cvss": {
+            "score": 4.3,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+          },
+          "range": ">=1.0.0 <1.10.3"
+        }
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/aws-cdk-lib/node_modules/yaml"
+      ],
+      "fixAvailable": true
+    },
+    "zod": {
+      "name": "zod",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        {
+          "source": 1243066,
+          "name": "zod",
+          "dependency": "zod",
+          "title": "Zod can exhaust memory while validating oversized constrained collections",
+          "url": "https://github.com/advisories/GHSA-mrhx-c7xc-m3w5",
+          "severity": "high",
+          "cwe": [
+            "CWE-770"
+          ],
+          "cvss": {
+            "score": 7.5,
+            "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+          },
+          "range": "<4.6.6"
+        }
+      ],
+      "effects": [],
+      "range": "",
+      "nodes": [
+        "node_modules/zod"
+      ],
+      "fixAvailable": false
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 26,
+      "moderate": 32,
+      "high": 22,
+      "critical": 0,
+      "total": 80
+    },
+    "dependencies": {
+      "prod": 46,
+      "dev": 295,
+      "optional": 1,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 341
+    }
+  }
+}

@@ -15,14 +15,17 @@ npm run build
 # テスト
 npm test
 
+# AWS 認証情報不要のオフライン検証（build / test / synth / audit）
+npm run check
+
 # CDK デプロイ
-npm run cdk deploy
+npm run cdk -- deploy
 
 # CDK diff（変更確認）
-npm run cdk diff
+npm run cdk -- diff
 
 # CDK synth（CloudFormation テンプレート生成）
-npm run cdk synth
+npm run cdk -- synth
 ```
 
 ## Architecture
@@ -43,3 +46,7 @@ S3 + CloudFront + Route53 + ACM による静的サイトホスティング構成
 - `DOMAIN_NAME`: カスタムドメイン名
 - `HOSTED_ZONE_ID`: Route 53ホストゾーンID
 - `ACM_CERTIFICATE_ARN`: ACM証明書ARN（us-east-1）
+
+## Toolchain / CI
+
+Node.js 24.22.1 LTS / npm 12.2.1 を使用。TypeScript は `dist/` に出力し、テストは Node 標準の `node:test` で実行する。Jest / ts-jest / ts-node は使用しない。`npm run synth:offline` は架空の識別子でローカル合成のみを行い、AWS にデプロイしない。CI にもデプロイ処理・AWS 認証情報はない。通常の CDK コマンドは `npm run cdk -- <command>` を使用する。
